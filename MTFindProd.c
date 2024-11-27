@@ -1,3 +1,23 @@
+/*
+ * Name: [Your Name]
+ * Operating System: Linux (Ubuntu on WSL)
+ *
+ * Hardware Configuration:
+ * CPU: AMD Ryzen 7 5800X 8-Core Processor
+ * Number of Cores: 8 physical cores, 16 threads (with SMT/Hyperthreading)
+ * CPU Speed: 3.8 GHz
+ * Cache Configuration:
+ *   - L1d: 256 KiB (8 instances)
+ *   - L1i: 256 KiB (8 instances)
+ *   - L2: 4 MiB (8 instances)
+ *   - L3: 32 MiB (1 instance)
+ * Virtualization: Running under Microsoft Hyper-V
+ *
+ *
+ *
+ *
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
@@ -339,7 +359,6 @@ void GenerateInput(int size, int indexForZero)
     for (int i = 0; i < size; i++)
     {
         gData[i] = GetRand(1, MAX_RANDOM_NUMBER);
-        // gData[i] = rand() % MAX_RANDOM_NUMBER + 1;
         if (indexForZero >= 0 && i == indexForZero)
         {
             gData[i] = 0;
