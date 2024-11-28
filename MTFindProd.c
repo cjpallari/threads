@@ -1,21 +1,23 @@
 /*
- * Name: [Your Name]
+ * Name: CJ Pallari
+ * 
+ * 
+ * Home machine
+ * Operating System: Linux (Ubuntu on WSL)
+
+ * ECS-Coding1
  * Operating System: Linux (Ubuntu on WSL)
  *
  * Hardware Configuration:
- * CPU: AMD Ryzen 7 5800X 8-Core Processor
- * Number of Cores: 8 physical cores, 16 threads (with SMT/Hyperthreading)
- * CPU Speed: 3.8 GHz
+ * CPU: Intel Xeon Gold 6254 CPU @ 3.10GHz
+ * Number of Cores: 2 sockets, 2 cores per socket, 1 thread per core (4 logical CPUs)
+ * CPU Speed: 3.1 GHz
  * Cache Configuration:
- *   - L1d: 256 KiB (8 instances)
- *   - L1i: 256 KiB (8 instances)
- *   - L2: 4 MiB (8 instances)
- *   - L3: 32 MiB (1 instance)
- * Virtualization: Running under Microsoft Hyper-V
- *
- *
- *
- *
+ *   - L1d: 128 KiB (4 instances)
+ *   - L1i: 128 KiB (4 instances)
+ *   - L2: 4 MiB (4 instances)
+ *   - L3: 49.5 MiB (2 instances)
+ * Virtualization: Running under VMware (Full virtualization)
  */
 
 #include <stdio.h>
